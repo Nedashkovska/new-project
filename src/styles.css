@@ -25,7 +25,7 @@ li:first-letter {
 }
 
 #city-name {
-  font-size: 40px;
+  font-size: 30px;
   padding: 0px 5px;
   margin: 0 auto;
 }
@@ -65,7 +65,7 @@ li:first-letter {
   outline: 0;
   border-radius: 15px;
 }
-.icon {
+.search-icon {
   position: absolute;
   left: 15px;
   top: 0;
@@ -150,8 +150,7 @@ li:first-letter {
   flex-direction: column;
   align-items: center;
 }
-.imgMain {
-  color: #183052;
+#icon {
   font-size: 90px;
   display: block;
   margin: 0;
