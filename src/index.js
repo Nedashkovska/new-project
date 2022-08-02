@@ -1,5 +1,3 @@
-//Feature 1
-
 let now = new Date();
 let days = [
   "Sunday",
@@ -14,6 +12,7 @@ let day = days[now.getDay()];
 let hours = now.getHours();
 if (hours < 10) {
   hours = `0${hours}`;
+ 
 }
 let minutes = now.getMinutes();
 if (minutes < 10) {
@@ -48,23 +47,6 @@ function handleSubmit(event) {
   let city = document.querySelector("#search-text-input").value;
   searchCity(city);
 }
-
-//Search position
-
-function showPosition(position) {
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let apiKey = "4f739c0017275db85d6a4d04edbaab2e";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-  axios.get(url).then(showTemperature);
-}
-
-function getCurrentPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-let buttonCurrentPosition = document.querySelector("#button-position");
-buttonCurrentPosition.addEventListener("click", getCurrentPosition);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
