@@ -10,6 +10,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .bg-img {
   background-image: url(../images/background.jpg);
   background-size: cover;
@@ -17,13 +22,6 @@ ul {
   height: 100vh;
   display: flex;
   align-items: center;
-}
-
-.imgMain {
-  color: #183052;
-  font-size: 90px;
-  display: block;
-  margin: 0;
 }
 
 #city-name {
@@ -67,14 +65,6 @@ ul {
   outline: 0;
   border-radius: 15px;
 }
-.form-input {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 5px 0;
-}
 .icon {
   position: absolute;
   left: 15px;
@@ -86,11 +76,30 @@ ul {
   justify-content: center;
 }
 
+.form-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5px 0;
+}
+
+#search-button {
+  margin: 5px 0;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  background-color: whitesmoke;
+}
+
 .contentWrap {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
+
 .currentInfo {
   display: flex;
   width: 100%;
@@ -140,6 +149,12 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.imgMain {
+  color: #183052;
+  font-size: 90px;
+  display: block;
+  margin: 0;
 }
 
 .imgSmall {
