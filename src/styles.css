@@ -27,6 +27,7 @@ li:first-letter {
 .units {
   position: relative;
   top: -34px;
+  left: -13px;
   font-size: 17px;
 }
 
