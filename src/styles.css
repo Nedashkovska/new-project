@@ -161,7 +161,7 @@ li:first-letter {
 
 .weather-forecast-date {
   font-size: 18px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .weather-forecast-temperatures {
@@ -169,7 +169,7 @@ li:first-letter {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 #city-name {
@@ -179,7 +179,8 @@ li:first-letter {
 }
 
 #date,
-#description {
+#description,
+#upd {
   padding: 0px 5px;
   margin-bottom: 5px;
   font-size: 18px;
