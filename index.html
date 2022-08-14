@@ -41,14 +41,14 @@
                     autofocus="on"
                     type="text"
                     class="search-bar"
-                    placeholder="Search your city"
+                    placeholder="Type your city..."
                     autocomplete="off"
                     />
                 </div>
              </div>
              <div class="col-3">
                 <input
-                  class="btn btn-outline-secondary"
+                  class="btn btn-outline"
                   id="search-button"
                   type="submit"
                   value="Search"
@@ -71,8 +71,7 @@
                 />
                 <h2 class="mainText">
                     <span class="temperature" id="current-temp"></span>
-                    <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#"  id="fahrenheit-link">°F</a></span>
+                    <span class="units">°C</span>
                 </h2>
               </div>
               <div class="otherInfo">
@@ -80,34 +79,14 @@
                   <span
                     >Humidity: <span id="humidity"></span>%</span>
                     <br />
-                    Wind: <span id="wind"></span>km/h</span
+                    Wind: <span id="wind"></span>m/h</span
                   >
                 </div>
               </div>
             </div>
              <div class="weather-forecast" id="forecast">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="weather-forecast-date">
-                        Thu
-                        </div>
-                        <img 
-                src="http://openweathermap.org/img/wn/04n@2x.png"
-                alt=""
-                />
-                <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max">
-                        18°
-                    </span>
-                    <span class="weather-forecast-temperature-min">
-                        12°
-                    </span>
-                </div>
-                    </div>
-                </div>
-              </div>
-          </div>
-           <small>
+                 <div class="source">
+         <small>
           <a
             href="https://github.com/Nedashkovska/new-project"
             target="_blank"
@@ -115,6 +94,10 @@
           >
           by Anna Nedashkovska
         </small>
+        </div>
+              </div>
+          </div>
+           
         </div>
       </div>
 

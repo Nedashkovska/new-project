@@ -30,15 +30,6 @@ li:first-letter {
   font-size: 17px;
 }
 
-.active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-}
-
 .container {
   background: rgba(250, 250, 250, 0.6);
   padding: 2em;
@@ -90,7 +81,7 @@ li:first-letter {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #183052;
+  border-bottom: 1px solid #a1a7b0;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -100,7 +91,6 @@ li:first-letter {
   align-items: center;
   justify-content: space-around;
   width: 50%;
-  border-right: 1px solid #183052;
 }
 
 .otherInfo {
@@ -119,42 +109,8 @@ li:first-letter {
   font-size: 50px;
 }
 
-.mainTextWord {
-  display: block;
-  font-size: 18px;
-  font-weight: normal;
-  color: #606470;
-}
-
-.forecastContent {
-  display: flex;
-  justify-content: space-between;
-}
-
-.forecastItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imgSmall {
-  font-size: 50px;
-  color: #183052;
-  margin-bottom: 5px;
-}
-
-.itemDay,
-.itemTemp {
-  font-size: 18px;
-  color: #183052;
-}
-
-.itemDay {
-  margin-bottom: 5px;
-}
-
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   color: #183052;
 }
@@ -196,7 +152,16 @@ li:first-letter {
   font-size: 18px;
   line-height: 30px;
   display: block;
-  background-color: whitesmoke;
+  background: #778297;
+  color: #f1eef5;
+  transition: all 200ms ease-in-out;
+}
+
+#search-button:hover {
+  background: #f1eef5;
+  color: #ea6e4a;
+  cursor: pointer;
+  box-shadow: none;
 }
 
 #icon {
